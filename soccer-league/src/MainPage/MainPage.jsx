@@ -97,6 +97,10 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
                 </a>
               </div>
             </div>
+
+            <div className="navbar">
+              <button></button>
+            </div>
           </div>
         </div>
       </div>

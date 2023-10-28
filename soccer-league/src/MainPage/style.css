@@ -110,6 +110,7 @@ header {
   color: rgb(83, 83, 181);
 }
 .h-s-secondColumn {
+  position: relative;
 }
 
 .h-s-secondColumn:hover {
@@ -255,4 +256,95 @@ header {
   padding: 1em;
   border: none;
   border-radius: 6em;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .h-s-firstColumn a {
+    font-size: 15px;
+  }
+  .h-s-firstColumn {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .h-secondRow {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100px;
+  }
+
+  .h-s-firstColumn::before {
+    background-size: 50px 50px;
+    display: none;
+  }
+
+  .h-s-secondColumn {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-s-secondColumn button {
+    display: none;
+  }
+
+  .sticker {
+    width: 50%;
+    height: 20%;
+  }
+
+  .slider img {
+    margin-top: 30%;
+    height: 100%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    /* Adjust as needed */
+    text-align: center;
+    /* To center-align the content */
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 0; /* Move the element to the right side */
+  }
+  .hf-secondColumn ul {
+  }
+
+  .hf-firstColumn {
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+  }
+  .navbar button {
+    background-image: url("./Assets/menu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #37003c;
+    width: 40px;
+    height: 40px;
+  }
+  .slider {
+    display: none;
+  }
 }
