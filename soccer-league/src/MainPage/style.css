@@ -107,7 +107,7 @@ header {
   color: white;
 }
 .h-secondRow .h-s-firstColumn nav li a:hover {
-  color: rgb(83, 83, 181);
+  color: gray;
 }
 .h-s-secondColumn {
   position: relative;
@@ -251,7 +251,7 @@ header {
 
 .h-s-secondColumn button:hover {
   background-color: rgb(103, 3, 103);
-  color: rgb(83, 83, 181);
+  color: gray;
   margin: 1em;
   padding: 1em;
   border: none;
