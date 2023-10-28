@@ -1,0 +1,85 @@
+.table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: blue;
+}
+.players {
+  border: 1em sold blue;
+}
+.league_page {
+  border: 1rem solid white;
+}
+.gs-o-table {
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 16px;
+}
+
+.containers {
+  margin: 0 auto;
+  align-items: center;
+  padding: 8px;
+}
+table {
+  width: 80%;
+  justify-content: center;
+}
+th {
+  border: 1px solid blue;
+  background-color: white;
+}
+
+td {
+  border: 1px solid blue;
+  padding-right: 1em;
+  background-color: white;
+}
+
+td:hover {
+  background-color: blue;
+  color: white;
+}
+
+.upArrow img {
+  width: 1em;
+  text-align: center;
+}
+
+/* Pagination Styling */
+
+.paginationButtons {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.paginationButtons a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+  background-color: white;
+}
+
+.paginationButtons a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: grey;
+}

@@ -1,0 +1,258 @@
+.body {
+  background-color: white;
+  margin: 0;
+  font-family: "Inter";
+  color: black;
+  /* Changed color to black for better readability */
+  padding: 0;
+  width: 80%;
+  height: 100%;
+}
+header {
+  height: 100%;
+}
+
+.wrapper {
+  background-color: #f0f0f0; /* Add a background color to the wrapper */
+  padding: 20px; /* Add padding to the wrapper */
+  max-width: 100%;
+}
+
+.page-container {
+  margin: 20px; /* Add margins to the page content */
+  background-color: rgb(
+    179,
+    172,
+    172
+  ); /* Set a background color for the page content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+}
+
+.h-firstRow {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  background-color: #37003c;
+  margin-bottom: 3em;
+  position: relative;
+  height: 200%;
+  width: 100%;
+  align-items: center;
+}
+
+.h-s-firstColumn {
+  align-items: center;
+  color: #76766f;
+  position: relative;
+  padding-left: 2em;
+}
+
+.h-s-firstColumn::before {
+  position: absolute;
+  content: "";
+  background: url("./Assets/premier.svg") no-repeat;
+  z-index: 100;
+  width: 100%;
+  height: 600%;
+  top: -5em;
+  left: -1em;
+  pointer-events: none;
+}
+
+.hf-firstColumn {
+  display: flex;
+  align-items: center;
+  color: #76766f;
+}
+.hf-firstColumn img {
+  width: 0.8rem;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.hf-secondColumn {
+  align-items: center;
+}
+
+.hf-secondColumn li {
+  display: inline;
+}
+
+.h-secondRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  /* Use percentage for margin-top */
+  background-color: #37003c;
+  padding-right: 1em;
+}
+
+.h-secondRow .h-s-firstColumn nav {
+  padding-left: 2em;
+}
+
+.h-secondRow .h-s-firstColumn nav li {
+  display: inline;
+  margin-right: 3em;
+  color: white;
+  font-weight: bold;
+}
+
+.h-secondRow .h-s-firstColumn nav li a {
+  text-decoration: none;
+  color: white;
+}
+.h-secondRow .h-s-firstColumn nav li a:hover {
+  color: rgb(83, 83, 181);
+}
+.h-s-secondColumn {
+}
+
+.h-s-secondColumn:hover {
+  color: rgb(56, 56, 60);
+}
+
+.firstColumn {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+
+.firstColumn img {
+  max-width: 100%;
+  /* Make images responsive */
+  height: auto;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(auto, 3);
+  /* Use CSS grid for flexible layout */
+}
+.hf-secondColumn img {
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+  padding-right: 1em;
+}
+.hf-secondColumn img {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.firstColumn {
+  background-image: url("./Assets/ball.jpeg") no-repate;
+  /* Add other background properties here */
+}
+
+.h-s-secondColumn button {
+  border-radius: 0%;
+  color: #000000;
+  font-size: 1rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #ebe5eb;
+}
+.container {
+  width: 100%;
+}
+.advertieser {
+  position: relative;
+}
+.advertieser img {
+  padding-top: 3.5em;
+  width: 100%;
+  height: auto;
+}
+.columns {
+  display: grid;
+  justify-content: space-around;
+  grid-template-areas: "left right";
+}
+
+.columns .league-tables {
+  grid: left;
+}
+
+.columns .player-ranks {
+  grid: right;
+}
+.container {
+  position: relative;
+  width: 100%;
+  /* Adjust as needed */
+  text-align: center;
+  /* To center-align the content */
+}
+
+.ball {
+  position: relative;
+  max-width: 100%;
+  height: 55rem;
+  background-image: url("./Assets/ball.jpeg");
+  background-size: cover; /* This will fully cover the container without cropping */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.sticker {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 20%;
+  z-index: 1;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  overflow: hidden;
+}
+
+.sticker a img {
+  /* transition: transform 0.4 ease; */
+}
+
+.sticker:hover a img {
+  transform: scale(1.1);
+  /* Zoom in by 10% when hovered */
+}
+
+.slider {
+  position: absolute;
+  top: 18%;
+  left: 0;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.bank-info a {
+  text-decoration: none;
+}
+
+.h-s-secondColumn button {
+  background-color: rgb(103, 3, 103);
+  color: rgb(244, 243, 243);
+  margin: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 6em;
+}
+
+.h-s-secondColumn button:hover {
+  background-color: rgb(103, 3, 103);
+  color: rgb(83, 83, 181);
+  margin: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 6em;
+}

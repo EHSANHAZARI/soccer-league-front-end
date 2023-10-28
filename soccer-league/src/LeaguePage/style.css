@@ -1,0 +1,16 @@
+th,
+td {
+  padding: 8px; /* Add padding to the cells */
+  text-align: center; /* Center-align text within the cells */
+}
+/* Rest of your existing CSS for the table */
+.table {
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/graphic.svg");
+}
+
+.league_page {
+  background-color: greenyellow;
+  margin: -15px;
+}
