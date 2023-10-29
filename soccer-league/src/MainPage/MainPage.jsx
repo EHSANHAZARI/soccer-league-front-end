@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css"; // Make sure this CSS file is in the same directory as your component
 import serieA from "./Assets/serieA.svg";
 import laliga from "./Assets/laliga.jpg";
@@ -13,15 +13,69 @@ import Player from "../PlayerPage/Player";
 import Slider from "./Components/Slider";
 
 const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
+  const hamBut = React.useRef(null);
+  const [hamState, sethamState] = useState(false);
+  const navRef = React.useRef(null);
+  const handleHamButton = () => {
+    //  If the ham state is false, it means it hasn't been clicked yet.
+    // Therefore, you should change the state to true and apply the new CSS.
+    if (!hamState) {
+      sethamState(true);
+      hamBut.current.className = "hamburgerClicked";
+      navRef.current.className = "ham-nav";
+    } else {
+      sethamState(false);
+      hamBut.current.className = "hamburgerButton";
+      console.log(navRef.current.className);
+      navRef.current.className = "displayNone";
+    }
+  };
   return (
     <div className="">
       <div className="page-container">
         <header className="header">
           <div className="h-firstRow">
             <div class="hf-firstColumn">
-              <span>League Sites</span>
+              <span className="sites">League Sites</span>
               <img src={SVG} alt="" />
             </div>
+            <nav ref={navRef} className="displayNone">
+              <ul>
+                <li>
+                  <a href="">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span>Bets</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span>Player</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span>League</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span>About</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div className="hamburger">
+              <button
+                className="hamburgerButton"
+                ref={hamBut}
+                onClick={handleHamButton}
+              ></button>
+            </div>
+            <span className="site-name">Soccer League</span>
             <div className="hf-secondColumn">
               <ul>
                 <li>
@@ -96,10 +150,6 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
                   <img src={Bet} alt="Sticker Image"></img>
                 </a>
               </div>
-            </div>
-
-            <div className="navbar">
-              <button></button>
             </div>
           </div>
         </div>
