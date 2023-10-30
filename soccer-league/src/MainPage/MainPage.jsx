@@ -124,7 +124,7 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
                     </a>
                   </li>
                   <li>
-                    <a href="" className="active">
+                    <a href="" className="active nav-mobile">
                       About
                     </a>
                   </li>

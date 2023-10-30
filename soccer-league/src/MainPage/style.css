@@ -170,7 +170,9 @@ header {
   justify-content: space-around;
   grid-template-areas: "left right";
 }
-
+.sites {
+  color: white;
+}
 .columns .league-tables {
   grid: left;
 }
@@ -395,6 +397,7 @@ header {
     position: relative;
     top: 15px;
     color: white;
+    border: none;
   }
   .hamburgerClicked {
     background-image: url("Assets/close.svg");
@@ -484,7 +487,13 @@ header {
   }
   .signIn span:hover {
     font-weight: 600;
-    color: #76766f;
+    background: linear-gradient(
+      137.27deg,
+      #05f0ff 19.85%,
+      #7367ff 91.08%,
+      #963cff 113.26%
+    );
+    color: #000000;
   }
   a {
     text-decoration: none; /* Remove underline for normal state */
@@ -496,5 +505,9 @@ header {
 
   a:active {
     text-decoration: none; /* Remove underline when clicked (active state) */
+  }
+
+  .nav-mobile {
+    display: none;
   }
 }
