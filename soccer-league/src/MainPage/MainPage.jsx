@@ -69,9 +69,9 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
               </ul>
             </nav>
             <div className="hamburger">
-              <button className="signIn">
+              <a href="#" className="signIn">
                 <span>Sign In</span>
-              </button>
+              </a>
               <button
                 className="hamburgerButton"
                 ref={hamBut}

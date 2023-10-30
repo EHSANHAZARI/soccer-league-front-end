@@ -351,7 +351,7 @@ header {
     height: 100px;
     z-index: 100;
     top: -20px;
-    width: 89.7%;
+    width: 89.9%;
   }
 
   .hamburger {
@@ -413,7 +413,7 @@ header {
   .ham-nav {
     display: block;
     position: absolute;
-    right: -0.35%;
+    right: 0;
     top: 100%;
     width: 50%;
     z-index: 100;
@@ -459,5 +459,16 @@ header {
   .signIn span {
     font-weight: 600;
     color: white;
+  }
+  a {
+    text-decoration: none; /* Remove underline for normal state */
+  }
+
+  a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+  }
+
+  a:active {
+    text-decoration: none; /* Remove underline when clicked (active state) */
   }
 }
