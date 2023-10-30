@@ -357,6 +357,7 @@ header {
     display: block;
     position: absolute;
     right: 0;
+    top: 27px;
   }
 
   .hf-firstColumn {
@@ -401,7 +402,7 @@ header {
     display: block;
     position: fixed;
     transform: translateY(50%);
-    font-size: x-large;
+    font-size: large;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: white;
   }
