@@ -347,7 +347,6 @@ header {
   }
   .h-firstRow {
     position: fixed;
-    /* border: solid 1rem blue; */
     height: 100px;
     z-index: 100;
     top: -20px;
@@ -460,12 +459,16 @@ header {
     font-weight: 600;
     color: white;
   }
+  .signIn span:hover {
+    font-weight: 600;
+    color: #76766f;
+  }
   a {
     text-decoration: none; /* Remove underline for normal state */
   }
 
   a:hover {
-    text-decoration: underline; /* Add underline on hover (optional) */
+    text-decoration: none; /* Add underline on hover (optional) */
   }
 
   a:active {
