@@ -106,15 +106,9 @@ header {
   text-decoration: none;
   color: white;
 }
-.h-secondRow .h-s-firstColumn nav li a:hover {
-  color: gray;
-}
+
 .h-s-secondColumn {
   position: relative;
-}
-
-.h-s-secondColumn:hover {
-  color: rgb(56, 56, 60);
 }
 
 .firstColumn {
@@ -249,15 +243,6 @@ header {
   border-radius: 6em;
 }
 
-.h-s-secondColumn button:hover {
-  background-color: rgb(103, 3, 103);
-  color: gray;
-  margin: 1em;
-  padding: 1em;
-  border: none;
-  border-radius: 6em;
-}
-
 .menu {
   display: none;
 }
@@ -273,6 +258,43 @@ header {
 }
 .ham-nav {
   display: none;
+}
+/* Style the links */
+.h-s-firstColumn a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* Create an underline effect on hover */
+.h-s-firstColumn a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(
+    137.27deg,
+    #05f0ff 19.85%,
+    #7367ff 91.08%,
+    #963cff 113.26%
+  );
+  transition: height 0.2s;
+}
+
+/* Increase the height of the underline on hover */
+.h-s-firstColumn a:hover::before {
+  height: 4px;
+}
+
+.h-s-secondColumn button:hover {
+  background: linear-gradient(
+    137.27deg,
+    #05f0ff 19.85%,
+    #7367ff 91.08%,
+    #963cff 113.26%
+  );
 }
 
 @media (max-width: 800px) {

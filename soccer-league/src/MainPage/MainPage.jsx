@@ -109,24 +109,24 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
               <nav>
                 <ul id="nav">
                   <li>
-                    <a href="">
-                      <Link to="https://www.youtube.com/watch?v=UjHT_NKR_gU">
-                        Bets
-                      </Link>
+                    <a href="" className="active">
+                      Bets
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <Link to="/Players">Player</Link>
+                    <a href="/Players" className="active">
+                      Player
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <Link to="/Leagues">League</Link>
+                    <a href="/Leagues" className="active">
+                      League
                     </a>
                   </li>
                   <li>
-                    <a href="">About</a>
+                    <a href="" className="active">
+                      About
+                    </a>
                   </li>
                 </ul>
               </nav>
