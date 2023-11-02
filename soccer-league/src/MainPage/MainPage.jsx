@@ -31,128 +31,126 @@ const MainPage = ({ leaguTable, homeGame, awayGame, news }) => {
     }
   };
   return (
-    <div className="">
-      <div className="page-container">
-        <header className="header">
-          <div className="h-firstRow">
-            <div class="hf-firstColumn">
-              <span className="sites">League Sites</span>
-              <img src={SVG} alt="" />
-            </div>
-            <nav ref={navRef} className="displayNone">
-              <ul>
+    <div className="page-container">
+      <header className="header">
+        <div className="h-firstRow">
+          <div class="hf-firstColumn">
+            <span className="sites">League Sites</span>
+            <img src={SVG} alt="" />
+          </div>
+          <nav ref={navRef} className="displayNone">
+            <ul>
+              <li>
+                <a href="">
+                  <span>Bets</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>News</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>Player</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>League</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>About</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="hamburger">
+            <a href="#" className="signIn">
+              <span>Sign In</span>
+            </a>
+            <button
+              className="hamburgerButton"
+              ref={hamBut}
+              onClick={handleHamButton}
+            ></button>
+          </div>
+          <span className="site-name">Soccer League</span>
+          <div className="hf-secondColumn">
+            <ul>
+              <li>
+                <a href="https://www.premierleague.com/">
+                  <img src={premier1} alt=""></img>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.legaseriea.it/en">
+                  <img src={serieA} alt=""></img>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.ligue1.com/">
+                  <img src={League1} alt=""></img>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.laliga.com/en-CA">
+                  <img src={laliga} alt=""></img>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="h-secondRow">
+          <div className="h-s-firstColumn">
+            <nav>
+              <ul id="nav">
                 <li>
-                  <a href="">
-                    <span>Bets</span>
+                  <a href="" className="active">
+                    Bets
                   </a>
                 </li>
                 <li>
-                  <a href="">
-                    <span>News</span>
+                  <a href="/Players" className="active">
+                    Player
                   </a>
                 </li>
                 <li>
-                  <a href="">
-                    <span>Player</span>
+                  <a href="/Leagues" className="active">
+                    League
                   </a>
                 </li>
                 <li>
-                  <a href="">
-                    <span>League</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span>About</span>
+                  <a href="" className="active nav-mobile">
+                    About
                   </a>
                 </li>
               </ul>
             </nav>
-            <div className="hamburger">
-              <a href="#" className="signIn">
-                <span>Sign In</span>
-              </a>
-              <button
-                className="hamburgerButton"
-                ref={hamBut}
-                onClick={handleHamButton}
-              ></button>
-            </div>
-            <span className="site-name">Soccer League</span>
-            <div className="hf-secondColumn">
-              <ul>
-                <li>
-                  <a href="https://www.premierleague.com/">
-                    <img src={premier1} alt=""></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.legaseriea.it/en">
-                    <img src={serieA} alt=""></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.ligue1.com/">
-                    <img src={League1} alt=""></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.laliga.com/en-CA">
-                    <img src={laliga} alt=""></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
-          <div className="h-secondRow">
-            <div className="h-s-firstColumn">
-              <nav>
-                <ul id="nav">
-                  <li>
-                    <a href="" className="active">
-                      Bets
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/Players" className="active">
-                      Player
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/Leagues" className="active">
-                      League
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" className="active nav-mobile">
-                      About
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="h-s-secondColumn">
-              <button className="signIn">Sign In</button>
+          <div className="h-s-secondColumn">
+            <button className="signIn">Sign In</button>
 
-              <Link to="/Register">
-                <button>Register</button>
-              </Link>
-            </div>
+            <Link to="/Register">
+              <button>Register</button>
+            </Link>
           </div>
-        </header>
-        <div className="container">
-          <div className="advertieser">
-            <div className="logo">
-              <div className="ball">
-                <div className="slider">
-                  <Slider />
-                </div>
+        </div>
+      </header>
+      <div className="container">
+        <div className="advertieser">
+          <div className="logo">
+            <div className="ball">
+              <div className="slider">
+                <Slider />
               </div>
-              <div className="sticker">
-                <a href="">
-                  <img src={Bet} alt="Sticker Image"></img>
-                </a>
-              </div>
+            </div>
+            <div className="sticker">
+              <a href="">
+                <img src={Bet} alt="Sticker Image"></img>
+              </a>
             </div>
           </div>
         </div>

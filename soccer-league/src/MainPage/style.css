@@ -1,13 +1,7 @@
-.body {
+.root {
   background-color: white;
-  margin: 0;
-  font-family: "Inter";
-  color: black;
-  /* Changed color to black for better readability */
-  padding: 0;
-  width: 80%;
-  height: 100%;
 }
+
 header {
   height: 100%;
 }
@@ -19,13 +13,10 @@ header {
 }
 
 .page-container {
-  margin: 20px; /* Add margins to the page content */
-  background-color: rgb(
-    179,
-    172,
-    172
-  ); /* Set a background color for the page content */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 220%;
 }
 
 .h-firstRow {
@@ -374,9 +365,11 @@ header {
     height: 100px;
     z-index: 100;
     top: -20px;
-    width: 89.9%;
+    width: 93%;
   }
-
+  header {
+    width: 95%;
+  }
   .hamburger {
     display: block;
     position: absolute;
@@ -431,14 +424,11 @@ header {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: white;
   }
-  .page-container {
-    width: 90%;
-  }
 
   .ham-nav {
     display: block;
     position: absolute;
-    right: 0;
+    right: -5px;
     top: 100%;
     width: 50%;
     z-index: 100;
@@ -446,6 +436,9 @@ header {
     background-color: white;
     min-width: 0;
     height: 400%;
+  }
+  .h-s-firstColumn {
+    display: none;
   }
   .ham-nav ul {
     list-style: none;
@@ -509,5 +502,21 @@ header {
 
   .nav-mobile {
     display: none;
+  }
+
+  .page-container {
+    width: 98%;
+  }
+  .ball {
+    width: 97.5%;
+    margin-top: 50px;
+  }
+
+  .h-secondRow {
+    margin-top: -50px;
+  }
+
+  .sticker {
+    height: 25%;
   }
 }

@@ -8,7 +8,7 @@ const Register = () => {
 
       <div className="right">
         <div className="form">
-          <form id="create-account-form">
+          <form id="create-account-form" className="create-account-form">
             <div className="header">
               <h1>Create an Account</h1>
             </div>
