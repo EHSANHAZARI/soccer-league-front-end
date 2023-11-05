@@ -1,16 +1,58 @@
-th,
-td {
-  padding: 8px; /* Add padding to the cells */
-  text-align: center; /* Center-align text within the cells */
-}
-/* Rest of your existing CSS for the table */
-.table {
-  display: flex;
-  justify-content: center;
+.league_page {
+  position: relative;
+  width: 100%;
+  height: 200vh;
   background-image: url("./assets/graphic.svg");
+  background-color: rgb(127, 232, 127);
 }
 
-.league_page {
-  background-color: greenyellow;
-  margin: -15px;
+.table {
+  position: absolute;
+  top: 100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header row style */
+th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Table cell style */
+td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 800px) {
+  .league_page {
+    height: 220vh;
+  }
 }

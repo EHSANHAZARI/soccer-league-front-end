@@ -1,16 +1,5 @@
-.table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: blue;
-}
 .players {
   border: 1em sold blue;
-}
-.league_page {
-  border: 1rem solid white;
 }
 .gs-o-table {
   width: 100%;
@@ -39,7 +28,7 @@ td {
 }
 
 td:hover {
-  background-color: blue;
+  background-color: #333;
   color: white;
 }
 
@@ -82,4 +71,12 @@ td:hover {
 .paginationDisabled a {
   color: grey;
   background-color: grey;
+}
+
+@media (max-width: 800px) {
+  .league_page {
+  }
+  .table {
+    margin-top: 10vh;
+  }
 }
